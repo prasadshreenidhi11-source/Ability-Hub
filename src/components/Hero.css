@@ -1,0 +1,796 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 900px;
+  overflow: hidden;
+     background: #f4f9fc;
+  color: #092d49;
+   font-family: "Poppins", sans-serif;
+  
+}
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    url("https://plus.unsplash.com/premium_photo-1681843126728-04eab730febe?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9jdG9ycyUyMHRlYW18ZW58MHx8MHx8fDA%3D");
+
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.03);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 28, 44, 0.96) 0%,
+      rgba(4, 28, 44, 0.86) 32%,
+      rgba(4, 28, 44, 0.45) 58%,
+      rgba(4, 28, 44, 0.15) 100%
+    );
+
+  z-index: 1;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.hero-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 105px;
+
+  padding: 0 5vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 20;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  background: rgba(5, 27, 42, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* LOGO */
+
+.hero-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: white;
+  text-decoration: none;
+
+  min-width: 220px;
+}
+
+.logo-mark {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff9d36;
+
+  color: #092d49;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  box-shadow: 0 8px 25px rgba(255, 157, 54, 0.3);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text strong {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.logo-text small {
+  margin-top: 5px;
+
+  font-size: 8px;
+  letter-spacing: 2.5px;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* NAVIGATION */
+
+.hero-nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.hero-nav a {
+  position: relative;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero-nav a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+
+  width: 0;
+  height: 2px;
+
+  background: #ff9d36;
+
+  transition: width 0.3s ease;
+}
+
+.hero-nav a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.hero-nav a:hover::after,
+.hero-nav a.active::after {
+  width: 100%;
+}
+
+.hero-nav a.active {
+  color: #ff9d36;
+}
+
+/* CALL BUTTON */
+
+.hero-call {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px 20px 8px 8px;
+
+  border-radius: 50px;
+
+  color: white;
+  text-decoration: none;
+
+  background: rgba(5, 22, 35, 0.9);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.hero-call:hover {
+  transform: translateY(-3px);
+  background: #082d48;
+}
+
+.call-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ff9d36;
+
+  color: #ffffff;
+
+  font-size: 20px;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.hero-content {
+  position: relative;
+
+  width: 100%;
+  max-width: 1500px;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  padding: 190px 7vw 120px;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 5;
+}
+
+.hero-copy {
+  width: 52%;
+  max-width: 720px;
+
+  position: relative;
+  z-index: 8;
+}
+
+/* EYEBROW */
+
+.hero-eyebrow {
+  margin: 0 0 20px;
+
+  color: #ffad55;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+/* MAIN HEADING */
+
+.hero-copy h1 {
+  margin: 0;
+
+  font-size: clamp(54px, 6vw, 94px);
+
+  line-height: 0.98;
+
+  font-weight: 600;
+
+  letter-spacing: -4px;
+
+  color: #ffffff;
+}
+
+/* ORANGE LINE */
+
+.hero-accent {
+  width: 250px;
+  height: 5px;
+
+  margin: 28px 0 22px;
+
+  border-radius: 50px;
+
+  background: #ff9d36;
+
+  box-shadow: 0 5px 20px rgba(255, 157, 54, 0.35);
+}
+
+/* SUBHEADING */
+
+.hero-copy h2 {
+  margin: 0 0 14px;
+
+  font-size: 24px;
+  font-weight: 500;
+
+  color: #ffffff;
+}
+
+/* DESCRIPTION */
+
+.hero-description {
+  max-width: 580px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.83);
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  font-weight: 300;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 26px;
+
+  margin-top: 34px;
+}
+
+.hero-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 17px 23px 17px 28px;
+
+  border-radius: 50px;
+
+  background: #ff9d36;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  box-shadow:
+    0 15px 40px rgba(255, 157, 54, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero-primary-btn span {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  font-size: 17px;
+}
+
+.hero-primary-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 20px 45px rgba(255, 157, 54, 0.35);
+}
+
+/* STORY BUTTON */
+
+.hero-story-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.play-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  font-size: 13px;
+
+  padding-left: 2px;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero-story-btn:hover .play-icon {
+  background: #ff9d36;
+
+  border-color: #ff9d36;
+
+  transform: scale(1.08);
+}
+
+/* =========================================
+   YEARS CARD
+========================================= */
+
+.hero-years {
+  position: absolute;
+
+  /* Move it away from granny's head */
+  right: 13vw;
+  top: 185px;
+
+  z-index: 30;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 24px 30px;
+
+  min-width: 165px;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  color: #092d49;
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.18);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+.years-number {
+  font-size: 58px;
+
+  line-height: 1;
+
+  font-weight: 600;
+
+  color: #092d49;
+}
+
+.years-label {
+  margin-top: 8px;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: #506476;
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   PERSON
+========================================= */
+
+.hero-person {
+  position: absolute;
+
+  right: -20px;
+  bottom: -10px;
+
+  width: 54%;
+
+  z-index: 6;
+
+  pointer-events: none;
+}
+
+.hero-person img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(0 30px 45px rgba(0, 0, 0, 0.2));
+}
+
+/* =========================================
+   BOTTOM CURVE
+========================================= */
+
+.hero-bottom-shape {
+  position: absolute;
+
+  bottom: -48px;
+  left: -93%;
+
+  width: 106%;
+  height: 85px;
+
+  z-index: 15;
+
+  background: #ffffff;
+
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .hero-header {
+    padding: 0 4vw;
+  }
+
+  .hero-nav {
+    gap: 20px;
+  }
+
+  .hero-nav a {
+    font-size: 12px;
+  }
+
+  .hero-call {
+    padding-right: 13px;
+  }
+
+  .hero-call span:last-child {
+    display: none;
+  }
+
+  .hero-content {
+    padding-left: 6vw;
+  }
+
+  .hero-copy {
+    width: 60%;
+  }
+
+  .hero-person {
+    width: 58%;
+    right: -50px;
+  }
+
+  .hero-years {
+    right: 5vw;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 900px;
+    height: auto;
+  }
+
+  .hero-header {
+    height: 82px;
+
+    padding: 0 20px;
+  }
+
+  .logo-mark {
+    width: 40px;
+    height: 40px;
+
+    font-size: 20px;
+  }
+
+  .logo-text strong {
+    font-size: 16px;
+  }
+
+  .logo-text small {
+    font-size: 6px;
+    letter-spacing: 2px;
+  }
+
+  .hero-nav {
+    display: none;
+  }
+
+  .hero-call {
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    justify-content: center;
+  }
+
+  .call-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hero-content {
+    min-height: 900px;
+
+    padding:
+      155px
+      24px
+      180px;
+
+    display: block;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-eyebrow {
+    font-size: 9px;
+    letter-spacing: 2.5px;
+
+    margin-bottom: 16px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(43px, 13vw, 65px);
+
+    line-height: 1;
+
+    letter-spacing: -2.5px;
+  }
+
+  .hero-accent {
+    width: 150px;
+    height: 4px;
+
+    margin: 20px 0;
+  }
+
+  .hero-copy h2 {
+    font-size: 20px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    max-width: 90%;
+  }
+
+  .hero-actions {
+    gap: 18px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+  }
+
+  .hero-primary-btn {
+    padding: 14px 18px 14px 21px;
+
+    font-size: 12px;
+  }
+
+  .hero-story-btn {
+    font-size: 12px;
+  }
+
+  .play-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-years {
+    top: auto;
+    right: 24px;
+    bottom: 220px;
+
+    padding: 14px 20px;
+
+    border-radius: 17px;
+  }
+
+  .years-number {
+    font-size: 38px;
+  }
+
+  .years-label {
+    font-size: 10px;
+  }
+
+  .hero-person {
+    width: 105%;
+
+    right: -20%;
+
+    bottom: 25px;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(4, 28, 44, 0.94) 0%,
+        rgba(4, 28, 44, 0.72) 45%,
+        rgba(4, 28, 44, 0.35) 70%,
+        rgba(4, 28, 44, 0.15) 100%
+      );
+  }
+
+  .hero-bottom-shape {
+    height: 55px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 850px;
+  }
+
+  .hero-content {
+    min-height: 850px;
+
+    padding-top: 135px;
+  }
+
+  .hero-copy h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+
+  .hero-primary-btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero-story-btn {
+    margin-left: 5px;
+  }
+
+  .hero-person {
+    width: 115%;
+
+    right: -25%;
+
+    bottom: 15px;
+  }
+
+  .hero-years {
+    bottom: 190px;
+  }
+}

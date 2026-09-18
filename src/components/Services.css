@@ -1,0 +1,862 @@
+/* =========================================================
+   ABILITY COUNTS — SERVICES
+========================================================= */
+
+.services-section {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 155px 6vw 125px;
+
+  background: #f4f9fc;
+  color: #092d49;
+
+  overflow: hidden;
+
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   TOP CURVE — MATCHES HERO
+========================================================= */
+
+.services-top-curve {
+  position: absolute;
+
+  top: -1px;
+  left: -5%;
+
+  width: 110%;
+  height: 105px;
+
+  background: #ffffff;
+
+  border-radius:
+    0 0 50% 50% /
+    0 0 100% 100%;
+
+  transform: translateY(-48%);
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   SOFT DECORATIVE CIRCLES
+========================================================= */
+
+.services-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 430px;
+  height: 430px;
+
+  left: -250px;
+  top: 180px;
+
+  border: 45px solid rgba(117, 188, 226, 0.07);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.services-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  right: -210px;
+  bottom: 80px;
+
+  border: 35px solid rgba(117, 188, 226, 0.07);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.services-container {
+  position: relative;
+
+  width: min(1400px, 100%);
+
+  margin: 0 auto;
+
+  z-index: 5;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.services-intro {
+  margin-bottom: 65px;
+}
+
+
+/* =========================================================
+   OUR SERVICES LABEL
+========================================================= */
+
+.services-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+
+  color: #f39a38;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+.services-label span {
+  width: 38px;
+
+  height: 2px;
+
+  border-radius: 20px;
+
+  background: #f39a38;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.services-heading {
+  margin: 0;
+
+  max-width: 1050px;
+
+  color: #092d49;
+
+  font-size: clamp(48px, 6vw, 82px);
+
+  line-height: 1;
+
+  letter-spacing: -4px;
+
+  font-weight: 500;
+}
+
+.services-heading em {
+  color: #f39a38;
+
+  font-style: normal;
+}
+
+
+/* =========================================================
+   DESCRIPTION + BUTTON
+========================================================= */
+
+.services-intro-bottom {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 28px;
+
+  margin-top: 30px;
+}
+
+.services-intro-bottom p {
+  margin: 0;
+
+  max-width: 760px;
+
+  color: #60788b;
+
+  font-size: 18px;
+
+  line-height: 1.75;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+========================================================= */
+
+.services-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  min-width: 215px;
+
+  padding: 15px 18px 15px 25px;
+
+  border-radius: 50px;
+
+  background: #f39a38;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 12px 30px rgba(243, 154, 56, 0.20);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+.services-link strong {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 31px;
+
+  height: 31px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+.services-link:hover {
+  transform: translateY(-4px);
+
+  background: #ef9130;
+
+  box-shadow:
+    0 18px 40px rgba(243, 154, 56, 0.30);
+}
+
+.services-link:hover strong {
+  transform: rotate(45deg);
+
+  background: rgba(255, 255, 255, 0.28);
+}
+
+
+/* =========================================================
+   SERVICES GRID
+   3 COLUMNS × 2 ROWS
+========================================================= */
+
+.services-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+   ALL CARDS SAME SIZE
+========================================================= */
+
+.service-card {
+  position: relative;
+
+  width: 100%;
+
+  height: 465px;
+
+  min-height: 465px;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(9, 45, 73, 0.06);
+
+  box-shadow:
+    0 15px 45px rgba(9, 45, 73, 0.07);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.55s ease;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.service-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 245px;
+
+  overflow: hidden;
+}
+
+.service-image {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* IMAGE OVERLAY */
+
+.service-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(9, 45, 73, 0.02) 30%,
+      rgba(9, 45, 73, 0.40) 100%
+    );
+
+  transition:
+    background 0.5s ease;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.service-number {
+  position: absolute;
+
+  top: 18px;
+
+  left: 18px;
+
+  width: 44px;
+
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #092d49;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.13);
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   TOP RIGHT ARROW
+========================================================= */
+
+.service-arrow {
+  position: absolute;
+
+  top: 18px;
+
+  right: 18px;
+
+  width: 44px;
+
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f39a38;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  opacity: 0;
+
+  transform: translateY(10px);
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.service-content {
+  height: 220px;
+
+  padding: 24px 25px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+
+/* TITLE */
+
+.service-text h3 {
+  margin: 0 0 10px;
+
+  color: #092d49;
+
+  font-size: 21px;
+
+  line-height: 1.25;
+
+  font-weight: 600;
+
+  letter-spacing: -0.6px;
+}
+
+
+/* DESCRIPTION */
+
+.service-text p {
+  margin: 0;
+
+  max-width: 450px;
+
+  color: #718596;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   CARD BOTTOM
+========================================================= */
+
+.service-bottom-line {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #e8eef2;
+
+  color: #718596;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+.service-small-arrow {
+  color: #092d49;
+
+  font-size: 18px;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.service-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 30px 70px rgba(9, 45, 73, 0.15);
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.08);
+}
+
+.service-card:hover .service-image-overlay {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(9, 45, 73, 0.05) 20%,
+      rgba(9, 45, 73, 0.53) 100%
+    );
+}
+
+.service-card:hover .service-arrow {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.service-card:hover .service-small-arrow {
+  transform: translateX(6px);
+
+  color: #f39a38;
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.service-reveal {
+  opacity: 0;
+
+  transform: translateY(45px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: var(--delay, 0ms);
+}
+
+.service-visible {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   BOTTOM MESSAGE
+========================================================= */
+
+.services-bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-top: 70px;
+}
+
+.services-bottom-line {
+  flex: 1;
+
+  height: 1px;
+
+  background: #d6e1e8;
+}
+
+.services-bottom p {
+  margin: 0;
+
+  color: #718596;
+
+  font-size: 12px;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.services-bottom strong {
+  color: #092d49;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .services-section {
+    padding-left: 4vw;
+
+    padding-right: 4vw;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .services-section {
+    padding:
+      110px
+      20px
+      80px;
+  }
+
+
+  /* CURVE */
+
+  .services-top-curve {
+    height: 70px;
+
+    transform: translateY(-43%);
+  }
+
+
+  /* LABEL */
+
+  .services-label {
+    margin-bottom: 18px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .services-label span {
+    width: 28px;
+  }
+
+
+  /* HEADING */
+
+  .services-heading {
+    font-size:
+      clamp(42px, 12vw, 60px);
+
+    line-height: 1.02;
+
+    letter-spacing: -2.5px;
+  }
+
+
+  /* INTRO */
+
+  .services-intro {
+    margin-bottom: 45px;
+  }
+
+  .services-intro-bottom {
+    margin-top: 25px;
+
+    gap: 24px;
+  }
+
+  .services-intro-bottom p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+
+  /* BUTTON */
+
+  .services-link {
+    min-width: 200px;
+
+    padding:
+      13px
+      16px
+      13px
+      21px;
+
+    font-size: 13px;
+  }
+
+
+  /* GRID */
+
+  .services-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  /* CARD */
+
+  .service-card {
+    height: 445px;
+
+    min-height: 445px;
+
+    border-radius: 22px;
+  }
+
+
+  /* IMAGE */
+
+  .service-image-wrapper {
+    height: 235px;
+  }
+
+
+  /* CONTENT */
+
+  .service-content {
+    height: 210px;
+
+    padding:
+      22px
+      20px
+      18px;
+  }
+
+  .service-text h3 {
+    font-size: 19px;
+  }
+
+  .service-text p {
+    font-size: 12px;
+
+    line-height: 1.65;
+  }
+
+
+  /* ARROW ALWAYS VISIBLE ON MOBILE */
+
+  .service-arrow {
+    width: 39px;
+
+    height: 39px;
+
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+
+
+  /* BOTTOM */
+
+  .services-bottom {
+    margin-top: 50px;
+
+    gap: 15px;
+  }
+
+  .services-bottom p {
+    min-width: 145px;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+    white-space: normal;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .service-card,
+  .service-image,
+  .service-arrow,
+  .service-small-arrow,
+  .service-reveal,
+  .services-link,
+  .services-link strong {
+    transition: none;
+  }
+
+  .service-reveal {
+    opacity: 1;
+
+    transform: none;
+  }
+}

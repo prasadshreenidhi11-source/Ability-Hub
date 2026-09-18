@@ -1,0 +1,967 @@
+/* =========================================================
+   ABILITY COUNTS — IMPACT SECTION
+========================================================= */
+
+.impact-section {
+  position: relative;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 150px 6vw 0;
+
+  background: #f4f9fc;
+
+  color: #092d49;
+
+  overflow: hidden;
+
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   TOP CURVE
+========================================================= */
+
+.impact-top-curve {
+  position: absolute;
+
+  top: -10px;
+
+  left: -5%;
+
+  width: 110%;
+
+  height: 105px;
+
+  background: #ffffff;
+
+  border-radius:
+    0 0 50% 50% /
+    0 0 100% 100%;
+
+  transform: translateY(-58%);
+
+  z-index: 10;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION
+========================================================= */
+
+.impact-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  border: 45px solid rgba(117, 188, 226, 0.065);
+}
+
+.impact-circle-one {
+  width: 430px;
+
+  height: 430px;
+
+  left: -250px;
+
+  top: 170px;
+}
+
+.impact-circle-two {
+  width: 350px;
+
+  height: 350px;
+
+  right: -220px;
+
+  bottom: 100px;
+
+  border-width: 35px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.impact-container {
+  position: relative;
+
+  width: min(1400px, 100%);
+
+  margin: 0 auto;
+
+  z-index: 5;
+}
+
+
+/* =========================================================
+   MAIN AREA
+========================================================= */
+
+.impact-main {
+  display: grid;
+
+  grid-template-columns:
+    0.82fr
+    1.18fr;
+
+  align-items: center;
+
+  gap: 80px;
+
+  min-height: 560px;
+}
+
+
+/* =========================================================
+   LEFT COPY
+========================================================= */
+
+.impact-copy {
+  position: relative;
+
+  z-index: 5;
+}
+
+
+/* LABEL */
+
+.impact-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+
+  color: #f39a38;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+.impact-label span {
+  width: 38px;
+
+  height: 2px;
+
+  border-radius: 20px;
+
+  background: #f39a38;
+}
+
+
+/* =========================================================
+   BIG NUMBER
+========================================================= */
+
+.impact-number {
+  margin: 0;
+
+  color: #092d49;
+
+  font-size: clamp(100px, 11vw, 165px);
+
+  line-height: 0.82;
+
+  letter-spacing: -9px;
+
+  font-weight: 500;
+}
+
+.impact-number span {
+  color: #f39a38;
+
+  font-size: 0.55em;
+
+  vertical-align: top;
+
+  margin-left: 3px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.impact-copy h2 {
+  margin: 15px 0 22px;
+
+  color: #092d49;
+
+  font-size: clamp(42px, 5vw, 70px);
+
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.impact-copy > p {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: #60788b;
+
+  font-size: 17px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   AVATARS + NOTE
+========================================================= */
+
+.impact-bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 24px;
+
+  margin-top: 35px;
+}
+
+
+/* AVATARS */
+
+.impact-avatars {
+  display: flex;
+
+  align-items: center;
+}
+
+.impact-avatar {
+  width: 45px;
+
+  height: 45px;
+
+  margin-left: -8px;
+
+  overflow: hidden;
+
+  border: 3px solid #f4f9fc;
+
+  border-radius: 50%;
+
+  background: #dcecf5;
+}
+
+.impact-avatar:first-child {
+  margin-left: 0;
+}
+
+.impact-avatar img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* NOTE */
+
+.impact-note {
+  display: flex;
+
+  flex-direction: column;
+
+  color: #7b94a5;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+
+  font-style: italic;
+}
+
+.impact-note strong {
+  color: #092d49;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.impact-visual {
+  position: relative;
+
+  min-height: 540px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* IMAGE FRAME */
+
+.impact-image-frame {
+  position: relative;
+
+  width: 100%;
+
+  height: 500px;
+
+  overflow: hidden;
+
+  border-radius:
+    90px
+    90px
+    90px
+    90px;
+
+  background: #dcecf5;
+
+  box-shadow:
+    0 35px 80px rgba(9, 45, 73, 0.14);
+
+  transform: rotate(1deg);
+}
+
+.impact-main-image {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transform: scale(1.02);
+
+  transition:
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.impact-image-frame:hover .impact-main-image {
+  transform: scale(1.07);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.impact-image-glow {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(9, 45, 73, 0.04),
+      transparent 50%,
+      rgba(243, 154, 56, 0.10)
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   FLOATING NOTE
+========================================================= */
+
+.impact-floating-note {
+  position: absolute;
+
+  top: 35px;
+
+  right: -35px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 19px 24px;
+
+  min-width: 210px;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.93);
+
+  backdrop-filter: blur(16px);
+
+  box-shadow:
+    0 18px 45px rgba(9, 45, 73, 0.12);
+
+  transform: rotate(-4deg);
+
+  z-index: 5;
+}
+
+.impact-floating-note span {
+  color: #7891a1;
+
+  font-size: 12px;
+
+  font-style: italic;
+}
+
+.impact-floating-note strong {
+  margin-top: 2px;
+
+  color: #092d49;
+
+  font-size: 19px;
+
+  font-weight: 600;
+
+  letter-spacing: -0.5px;
+}
+
+.impact-floating-note i {
+  position: absolute;
+
+  right: 15px;
+
+  bottom: 12px;
+
+  color: #f39a38;
+
+  font-size: 22px;
+
+  font-style: normal;
+}
+
+
+/* =========================================================
+   ORANGE SPARK
+========================================================= */
+
+.impact-spark {
+  position: absolute;
+
+  left: -18px;
+
+  top: 70px;
+
+  width: 45px;
+
+  height: 45px;
+
+  z-index: 6;
+}
+
+.impact-spark span {
+  position: absolute;
+
+  width: 4px;
+
+  height: 20px;
+
+  border-radius: 10px;
+
+  background: #f39a38;
+
+  transform: rotate(35deg);
+}
+
+.impact-spark span:first-child {
+  left: 8px;
+
+  top: 3px;
+}
+
+.impact-spark span:last-child {
+  left: 22px;
+
+  top: 14px;
+
+  transform: rotate(115deg);
+}
+
+
+/* =========================================================
+   INFINITE MARQUEE
+========================================================= */
+
+.impact-marquee-wrapper {
+  position: relative;
+
+  width: 100vw;
+
+  margin-left: calc(50% - 50vw);
+
+  margin-top: 55px;
+
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.78);
+
+  border-top:
+    1px solid rgba(9, 45, 73, 0.04);
+
+  border-bottom:
+    1px solid rgba(9, 45, 73, 0.04);
+
+  backdrop-filter: blur(15px);
+}
+
+
+/* MARQUEE */
+
+.impact-marquee {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+
+/* TRACK */
+
+.impact-marquee-track {
+  display: flex;
+
+  width: max-content;
+
+  animation:
+    impactScroll 28s linear infinite;
+}
+
+
+/* =========================================================
+   MARQUEE ITEM
+========================================================= */
+
+.impact-value {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  width: 300px;
+
+  min-height: 130px;
+
+  padding: 20px 32px;
+
+  flex-shrink: 0;
+
+  border-right:
+    1px solid rgba(9, 45, 73, 0.08);
+}
+
+
+/* ICON */
+
+.impact-value-icon {
+  width: 48px;
+
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e5f3fa;
+
+  color: #12638d;
+
+  font-size: 21px;
+
+  font-weight: 500;
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+.impact-value:hover .impact-value-icon {
+  transform: rotate(12deg) scale(1.08);
+
+  background: #f39a38;
+
+  color: #ffffff;
+}
+
+
+/* CONTENT */
+
+.impact-value-content h3 {
+  margin: 0 0 5px;
+
+  color: #092d49;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  letter-spacing: -0.3px;
+}
+
+.impact-value-content p {
+  margin: 0;
+
+  max-width: 180px;
+
+  color: #7890a0;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   MARQUEE ANIMATION
+========================================================= */
+
+@keyframes impactScroll {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+/* PAUSE WHEN HOVERED */
+
+.impact-marquee:hover
+.impact-marquee-track {
+  animation-play-state: paused;
+}
+
+
+/* =========================================================
+   BOTTOM MESSAGE
+========================================================= */
+
+.impact-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 42px 0 50px;
+
+  color: #8ba0ae;
+
+  font-size: 12px;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+.impact-footer strong {
+  color: #092d49;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.impact-reveal {
+  opacity: 0;
+
+  transform: translateY(40px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.impact-visible {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .impact-section {
+    padding-left: 4vw;
+
+    padding-right: 4vw;
+  }
+
+  .impact-main {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .impact-copy {
+    max-width: 720px;
+  }
+
+  .impact-visual {
+    min-height: 500px;
+  }
+
+  .impact-image-frame {
+    height: 500px;
+  }
+
+  .impact-floating-note {
+    right: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .impact-section {
+    padding:
+      110px
+      20px
+      0;
+  }
+
+
+  /* CURVE */
+
+  .impact-top-curve {
+    height: 70px;
+
+    transform: translateY(-43%);
+  }
+
+
+  /* MAIN */
+
+  .impact-main {
+    min-height: auto;
+
+    gap: 35px;
+  }
+
+
+  /* LABEL */
+
+  .impact-label {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .impact-label span {
+    width: 28px;
+  }
+
+
+  /* NUMBER */
+
+  .impact-number {
+    font-size: clamp(90px, 27vw, 135px);
+
+    letter-spacing: -7px;
+  }
+
+
+  /* TITLE */
+
+  .impact-copy h2 {
+    margin-top: 14px;
+
+    font-size:
+      clamp(40px, 12vw, 58px);
+
+    letter-spacing: -2.5px;
+  }
+
+
+  /* DESCRIPTION */
+
+  .impact-copy > p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+
+  /* BOTTOM */
+
+  .impact-bottom {
+    gap: 15px;
+
+    margin-top: 28px;
+  }
+
+  .impact-avatar {
+    width: 39px;
+
+    height: 39px;
+  }
+
+  .impact-note {
+    font-size: 11px;
+  }
+
+
+  /* IMAGE */
+
+  .impact-visual {
+    min-height: 390px;
+  }
+
+  .impact-image-frame {
+    height: 370px;
+
+    border-radius: 45px;
+
+    transform: none;
+  }
+
+
+  /* FLOATING NOTE */
+
+  .impact-floating-note {
+    top: 15px;
+
+    right: 10px;
+
+    min-width: 170px;
+
+    padding:
+      14px
+      17px;
+
+    border-radius: 17px;
+  }
+
+  .impact-floating-note strong {
+    font-size: 15px;
+  }
+
+
+  /* SPARK */
+
+  .impact-spark {
+    display: none;
+  }
+
+
+  /* MARQUEE */
+
+  .impact-marquee-wrapper {
+    margin-top: 35px;
+  }
+
+  .impact-value {
+    width: 255px;
+
+    min-height: 110px;
+
+    padding:
+      18px
+      22px;
+  }
+
+  .impact-value-icon {
+    width: 42px;
+
+    height: 42px;
+
+    font-size: 18px;
+  }
+
+  .impact-value-content h3 {
+    font-size: 15px;
+  }
+
+  .impact-value-content p {
+    font-size: 10px;
+  }
+
+
+  /* FOOTER */
+
+  .impact-footer {
+    padding:
+      30px
+      0
+      35px;
+
+    font-size: 9px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .impact-marquee-track {
+    animation: none;
+  }
+
+  .impact-reveal {
+    opacity: 1;
+
+    transform: none;
+
+    transition: none;
+  }
+
+  .impact-main-image {
+    transition: none;
+  }
+}
